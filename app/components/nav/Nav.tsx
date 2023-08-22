@@ -18,7 +18,14 @@ const Nav = ({ pages }: NavProps) => {
   const pathName = usePathname();
   return (
     <header className="flex justify-between items-center py-8">
-      <Image src="/assets/images/logo.svg" alt="logo" width={65} height={40} />
+      <Link href="/">
+        <Image
+          src="/assets/images/logo.svg"
+          alt="logo"
+          width={65}
+          height={40}
+        />
+      </Link>
       <nav className="hidden md:block">
         <ul className="flex gap-x-10 text-neutral--dark-grayish-blue">
           {pages.map((page) => (
