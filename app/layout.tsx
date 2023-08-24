@@ -46,7 +46,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-11/12 max-w-[1200px] mx-auto">
+        <div className="w-11/12 max-w-[1110px] mx-auto">
           <Nav pages={pages} />
           {children}
         </div>
