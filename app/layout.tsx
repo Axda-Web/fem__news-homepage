@@ -17,22 +17,22 @@ const pages = [
     href: "/",
   },
   {
-    id: 1,
+    id: 2,
     name: "New",
     href: "/new",
   },
   {
-    id: 1,
+    id: 3,
     name: "Popular",
     href: "/popular",
   },
   {
-    id: 1,
+    id: 4,
     name: "Trending",
     href: "/trending",
   },
   {
-    id: 1,
+    id: 5,
     name: "Categories",
     href: "/categories",
   },

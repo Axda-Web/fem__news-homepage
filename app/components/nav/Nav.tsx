@@ -24,6 +24,7 @@ const Nav = ({ pages }: NavProps) => {
           alt="logo"
           width={65}
           height={40}
+          priority
         />
       </Link>
       <nav className="hidden md:block">
