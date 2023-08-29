@@ -51,7 +51,7 @@ export default async function Home() {
             <p className="">{featuredPost?.description}</p>
             <Link
               className="bg-accent--soft-red text-neutral--off-white text-sm uppercase py-3 px-8 tracking-[4.38px] hover:bg-neutral--very-dark-blue transition-colors inline-block"
-              href="#"
+              href={`/posts/${featuredPost?.id}`}
             >
               Read more
             </Link>
@@ -64,7 +64,7 @@ export default async function Home() {
           <ul className="divide-y-2 divide-neutral--dark-grayish-blue">
             {newPosts.map((post) => (
               <li key={post.id} className="py-8">
-                <Link href="#">
+                <Link href={`/posts/${post.id}`}>
                   <h3 className="text-neutral--off-white text-xl font-extrabold hover:text-accent--soft-orange transition-colors">
                     {post.title}
                   </h3>
@@ -90,7 +90,7 @@ export default async function Home() {
                   <span className="text-[32px] font-bold text text-neutral--grayish-blue">
                     {(index + 1).toString().padStart(2, "0")}
                   </span>
-                  <Link href="#">
+                  <Link href={`/posts/${post.id}`}>
                     <h3 className="font-extrabold text-lg hover:text-accent--soft-red whitespace-nowrap">
                       {post.title}
                     </h3>
