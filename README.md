@@ -8,6 +8,7 @@
 [![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white&style=flat-square)](https://jestjs.io/)
 [![React Testing Library](https://img.shields.io/badge/React_Testing_Library-E33332?logo=testing-library&logoColor=white&style=flat-square)](https://testing-library.com/react)
 [![Cypress](https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=white&style=flat-square)](https://www.cypress.io/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-green?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -29,6 +30,11 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
+
+extra features:
+
+- Currently working on a dashboard page allowing the user to manage the blog posts (CRUD). The user will have to be authenticated to access this page. All the blog posts will be register in a MongoDB database using Nextjs API routes.
+- Unit testing with Jest/RTL + E2E tests with Cypress.
 
 ### Screenshot
 
