@@ -1,24 +1,69 @@
-import { postsSchema } from "@/models/zod";
-import type { Post } from "@/types";
+import { postsSchema, postSchema } from "@/models/zod";
+import type { Post, PostFormData } from "@/types";
 
 const BASE_URL = "http://localhost:3000/api/posts";
 
 const getAllPosts = async () => {
-  const response = await fetch(BASE_URL);
-  const data = await response.json();
-  const parsedData = postsSchema.parse(data.posts);
-  return parsedData;
+  try {
+    const response = await fetch(BASE_URL);
+    const data = await response.json();
+    const parsedData = postsSchema.parse(data.posts);
+    return parsedData;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-const addPost = async (newPost: Omit<Post, "id" | "date" | "new">) => {
-  const response = await fetch(BASE_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(newPost),
-  });
-  return response.json();
+const getPost = async (postId: string) => {
+  try {
+    const response = await fetch(`${BASE_URL}/${postId}`);
+    const data = await response.json();
+    const parsedData = postSchema.parse(data.post);
+    return parsedData;
+  } catch (error) {
+    console.log(error);
+  }
 };
 
-export { getAllPosts, addPost };
+const addPost = async (newPost: PostFormData) => {
+  try {
+    const response = await fetch(BASE_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newPost),
+    });
+    return response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const deletePost = async (postId: string) => {
+  try {
+    const response = await fetch(`${BASE_URL}/${postId}`, {
+      method: "DELETE",
+    });
+    return response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+const updatePost = async (postId: string, newPost: PostFormData) => {
+  try {
+    const response = await fetch(`${BASE_URL}/${postId}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newPost),
+    });
+    return response.json();
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+export { getAllPosts, getPost, addPost, deletePost, updatePost };

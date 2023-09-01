@@ -5,7 +5,7 @@ const postSchema = new Schema({
     type: String,
     required: true,
   },
-  description: {
+  content: {
     type: String,
     required: true,
   },
@@ -22,7 +22,7 @@ const postSchema = new Schema({
   },
   likes: {
     type: Number,
-    required: true,
+    default: 0,
   },
   new: {
     type: Boolean,
