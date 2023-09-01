@@ -43,7 +43,7 @@ extra features:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/Axda-Web/fem__news-homepage)
-- Live Site URL: [Vercel](https://fe-newsletter-bret.vercel.app/)
+<!-- - Live Site URL: [Vercel](https://fe-newsletter-bret.vercel.app/) -->
 
 ## My process
 
@@ -58,6 +58,7 @@ extra features:
 - [Jest](https://jestjs.io/)
 - [React Testing Library](https://testing-library.com/react)
 - [Cypress](https://www.cypress.io/)
+- [MongoDB](https://www.mongodb.com//)
 
 ## Author
 
