@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "./components/nav";
+import PostsProvider from "./components/posts-container";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -46,10 +47,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="w-11/12 max-w-[1110px] mx-auto">
-          <Nav pages={pages} />
-          {children}
-        </div>
+        <PostsProvider>
+          <div className="w-11/12 max-w-[1110px] mx-auto">
+            <Nav pages={pages} />
+            {children}
+          </div>
+        </PostsProvider>
       </body>
     </html>
   );

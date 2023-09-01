@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default async function Home() {
   const posts = await getAllPosts();
 
-  if (!posts.length) {
+  if (!posts?.length) {
     return null;
   }
 
@@ -20,7 +20,7 @@ export default async function Home() {
     .filter((post) => post.new)
     .slice(0, 3)
     .sort((a, b) => b.date.localeCompare(a.date));
-  const topPosts = posts.sort((a, b) => b.likes - a.likes).slice(0, 3);
+  const topPosts = posts.sort((a, b) => b?.likes! - a?.likes!).slice(0, 3);
 
   return (
     <main className="space-y-16 md:space-y-20 xl:space-y-24">
@@ -48,7 +48,7 @@ export default async function Home() {
             </h1>
           </div>
           <div className="sm:flex sm:flex-col sm:justify-between sm:items-start space-y-6 sm:space-y-0">
-            <p className="">{featuredPost?.description}</p>
+            <p className="">{featuredPost?.content}</p>
             <Link
               className="bg-accent--soft-red text-neutral--off-white text-sm uppercase py-3 px-8 tracking-[4.38px] hover:bg-neutral--very-dark-blue transition-colors inline-block"
               href={`/posts/${featuredPost?.id}`}
@@ -69,7 +69,7 @@ export default async function Home() {
                     {post.title}
                   </h3>
                 </Link>
-                <p>{post.description}</p>
+                <p>{post.content}</p>
               </li>
             ))}
           </ul>
@@ -95,7 +95,7 @@ export default async function Home() {
                       {post.title}
                     </h3>
                   </Link>
-                  <p>{post.description}</p>
+                  <p>{post.content}</p>
                 </div>
               </article>
             </li>
