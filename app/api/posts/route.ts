@@ -26,13 +26,12 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
-    const { title, description, author, likes } = await request.json();
+    const { title, content, author } = await request.json();
     await connectToDB();
     const newPost = new Post({
       title,
-      description,
+      content,
       author,
-      likes,
     });
     const addedPost = await newPost.save();
     return NextResponse.json({
