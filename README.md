@@ -34,7 +34,7 @@ Users should be able to:
 extra features:
 
 - Currently working on a dashboard page allowing the user to manage the blog posts (CRUD). The user will have to be authenticated to access this page. All the blog posts will be register in a MongoDB database using Nextjs API routes.
-- Unit testing with Jest/RTL + E2E tests with Cypress.
+- Unit testing with Jest/RTL + E2E tests with Cypress comming soon.
 
 ### Screenshot
 
