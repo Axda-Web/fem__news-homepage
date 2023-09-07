@@ -58,7 +58,7 @@ export default async function Home() {
             New
           </h2>
           <ul className="divide-y-2 divide-neutral--dark-grayish-blue">
-            {newPosts.map((post) => (
+            {newPosts?.map((post) => (
               <li key={post.id} className="py-8">
                 <Link href={`/posts/${post.id}`}>
                   <h3 className="text-neutral--off-white text-xl font-extrabold hover:text-accent--soft-orange transition-colors">
@@ -73,7 +73,7 @@ export default async function Home() {
       </div>
       <section>
         <ul className="md:flex md:flex-wrap md:items-center xl:justify-between md:gap-6 space-y-8 md:space-y-0">
-          {topPosts.map((post, index) => (
+          {topPosts?.map((post, index) => (
             <li key={post.id}>
               <article className="flex gap-x-6 justify-between max-w-[350px]">
                 <Image
