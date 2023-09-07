@@ -1,7 +1,7 @@
 import { postsSchema, postSchema } from "@/models/zod";
 import type { Post, PostFormData } from "@/types";
 
-const BASE_URL = "http://localhost:3000/api/posts";
+const BASE_URL = "/api/posts";
 
 const getAllPosts = async () => {
   try {
