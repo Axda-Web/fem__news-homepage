@@ -11,16 +11,12 @@ export const metadata: Metadata = {
 export default async function Home() {
   const posts = await getAllPosts();
 
-  if (!posts?.length) {
-    return null;
-  }
-
-  const featuredPost = posts.find((post) => post.featured);
+  const featuredPost = posts?.find((post) => post.featured);
   const newPosts = posts
-    .filter((post) => post.new)
+    ?.filter((post) => post.new)
     .slice(0, 3)
     .sort((a, b) => b.date.localeCompare(a.date));
-  const topPosts = posts.sort((a, b) => b?.likes! - a?.likes!).slice(0, 3);
+  const topPosts = posts?.sort((a, b) => b?.likes! - a?.likes!).slice(0, 3);
 
   return (
     <main className="space-y-16 md:space-y-20 xl:space-y-24">
