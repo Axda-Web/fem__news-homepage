@@ -1,8 +1,9 @@
 import { postsSchema, postSchema } from "@/models/zod";
 import type { Post, PostFormData } from "@/types";
 
-const BASE_URL = `${process.env.VERCEL_URL}/api/posts`;
+const BASE_URL = `https://${process.env.VERCEL_URL}/api/posts`;
 
+console.log("🚀 ~ file: post.ts:6 ~ BASE_URL:", BASE_URL);
 const getAllPosts = async () => {
   try {
     const response = await fetch(BASE_URL);
