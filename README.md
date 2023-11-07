@@ -5,10 +5,11 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?logo=typescript&logoColor=white&style=flat-square)](https://www.typescriptlang.org/)
 [![Zod](https://img.shields.io/badge/Zod-E95950?logo=zod&logoColor=white&style=flat-square)](https://zod.sourceforge.io/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square)](https://tailwindcss.com/)
-[![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white&style=flat-square)](https://jestjs.io/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-darkgreen?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+
+<!-- [![Jest](https://img.shields.io/badge/Jest-C21325?logo=jest&logoColor=white&style=flat-square)](https://jestjs.io/)
 [![React Testing Library](https://img.shields.io/badge/React_Testing_Library-E33332?logo=testing-library&logoColor=white&style=flat-square)](https://testing-library.com/react)
-[![Cypress](https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=white&style=flat-square)](https://www.cypress.io/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-green?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Cypress](https://img.shields.io/badge/Cypress-17202C?logo=cypress&logoColor=white&style=flat-square)](https://www.cypress.io/) -->
 
 This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
@@ -43,7 +44,7 @@ extra features:
 ### Links
 
 - Solution URL: [GitHub repo](https://github.com/Axda-Web/fem__news-homepage)
-<!-- - Live Site URL: [Vercel](https://fe-newsletter-bret.vercel.app/) -->
+- Live Site URL: [Vercel](https://fem-news-homepage-ten.vercel.app/)
 
 ## My process
 
@@ -55,10 +56,10 @@ extra features:
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
 - [TypeScript](https://www.typescriptlang.org/)
 - [Zod](https://github.com/colinhacks/zod)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/react)
-- [Cypress](https://www.cypress.io/)
 - [MongoDB](https://www.mongodb.com//)
+<!-- - [Jest](https://jestjs.io/)
+- [React Testing Library](https://testing-library.com/react)
+- [Cypress](https://www.cypress.io/) -->
 
 ## Author
 
